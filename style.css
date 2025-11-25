@@ -96,8 +96,8 @@ html, body {
 
     .gallery-grid {
   display: grid;
-  margin: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 в ряд */
+  gap: 10px;
   gap: 10px;
 }
 
@@ -112,11 +112,9 @@ html, body {
 /* На телефоне — одна картинка в ряд */
 @media (max-width: 576px) {
   .gallery img {
-    flex: 1 1 100%;
     grid-template-columns: 1fr;
   }
 }
-
 
 .menu {
       list-style: none;
@@ -247,5 +245,6 @@ font-family: 'Times New Roman', Times, serif;
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
 
 
