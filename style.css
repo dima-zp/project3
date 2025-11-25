@@ -113,10 +113,9 @@ html, body {
 @media (max-width: 576px) {
   .gallery img {
     flex: 1 1 100%;
-    max-width: 100%;
+    grid-template-columns: 1fr;
   }
 }
-
 
 
 .menu {
@@ -248,4 +247,5 @@ font-family: 'Times New Roman', Times, serif;
   0%   { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
+
 
